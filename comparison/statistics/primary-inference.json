@@ -1,0 +1,19 @@
+{
+  "difference": -0.24004612288475471,
+  "ci95_difference": [
+    -0.2926224069800855,
+    -0.18691828483468872
+  ],
+  "ci95_a": [
+    0.617684567061401,
+    0.7126972442429765
+  ],
+  "ci95_b": [
+    0.87555893913662,
+    0.9327251357276896
+  ],
+  "permutation_p": 9.999000099990002e-05,
+  "resamples": 10000,
+  "rejected_bootstrap": 0,
+  "assumption": "conditional on image-level independence, potentially optimistic"
+}

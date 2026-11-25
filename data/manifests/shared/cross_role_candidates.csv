@@ -1,0 +1,5 @@
+group,condition,component,roles,classification
+MetalParts,test1,56e26af45b79df07fb114536,"source_test,target_test",evaluation-only dependence candidate
+MetalParts,test2,76dcfe002b0aad92f2c93a69,"source_test,target_test",evaluation-only dependence candidate
+MetalParts,test3,474d6caced80a43211033828,"source_test,target_test",evaluation-only dependence candidate
+MetalParts,test4,0e596cc572ccefb4895a6eb7,"source_test,target_test",evaluation-only dependence candidate

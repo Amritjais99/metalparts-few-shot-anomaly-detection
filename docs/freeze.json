@@ -1,0 +1,31 @@
+{
+  "fingerprint": "6216f8af01b6d87d88192a1ccd9035f248b79e9d5ffd8f654dde254bfea0e1aa",
+  "config_hash": "5590513874582e2006848ee1a5bb14a5e835b46cfe59ffd91cc89bce13fed46d",
+  "protocol_hash": "ac0cb8aae37a48b91459ccb2bbc8a07525104e5cf9f556361f3a33efb4b82d3d",
+  "code_hash": "6137f5958aefa8d7f0218b125903122bd30368648273d1d343a80108575dd083",
+  "manifest_hash": "8ce3ec84faf48fe9f47b6f34ecc5bd0010eed18a8417bf9301a6308ac7d4b2ab",
+  "date": "2026-11-14",
+  "queue_sizes": {
+    "Q1": 270,
+    "Q2": 90,
+    "Q3": 54,
+    "Q4": 0
+  },
+  "cpu_tests_passed": true,
+  "shard_export_resume_synthetic_passed": true,
+  "test_runs_started": true,
+  "archived_run_fingerprint": "de4a10c2ea7058f590d2ec30bd657cef1e3554344b1969b8d444ebe365441404",
+  "frozen_bundle_sha256": "6b8dc493172529bf1d1154e32cb3e6ed336e773a723e035e7d9a0bb9ce806632",
+  "config_path": "common/configs/config.yaml",
+  "protocol_path": "docs/protocol.md",
+  "manifests_path": "data/manifests",
+  "source_file_sha256": {
+    "common/data.py": "cdafff39e82df59ad197b44a5698e463e16cac599dfc4857c76a7206e64819a5",
+    "common/model.py": "c475d2ef864aa0c55748aa139d346fe9eafe757a6c5b3aae91581447e4903db1",
+    "common/run.py": "9695f52d3b24bde43202a52d10b6d262f2ccd65e4bad19b5078abc96bc5c87a2",
+    "common/analyze.py": "3bd4c65247f83833606aa40a2a335cfcc00819b9d5101279490bd8f78e578680",
+    "models/conv_ae/model.py": "693951a5133893a44e653998433f7bdd4d5c013837bce2886f462624cf47ee4b",
+    "models/patchcore/model.py": "d56d12c714185630c2cc42b84e30edb847c2b63574d4986d19ac60d8c6bbd08b",
+    "models/dinov2/model.py": "415b4cfc28c247b01590c510b5e46a779664626a16190b129e49b3b18f6d24e5"
+  }
+}

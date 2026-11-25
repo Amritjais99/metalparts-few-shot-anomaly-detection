@@ -1,0 +1,19 @@
+{
+  "revision": "82c642b2d18be60f2dab104f8dd4dea1f4ccfacb",
+  "expected_files": 3659,
+  "expected_bytes": 6863601708,
+  "verified_files": 3659,
+  "errors": [],
+  "elapsed_seconds": 695.4955642223358,
+  "free_before": 171611033600,
+  "free_after": 174274158592,
+  "license": "CC BY 4.0",
+  "card_url": "https://huggingface.co/datasets/AmazonScience/RobustAD/blob/82c642b2d18be60f2dab104f8dd4dea1f4ccfacb/README.md",
+  "actual_group_file_count": 3659,
+  "readme_sha256": "0a7a8b5f5be1824c56c116d151690b1e9f4c82bb483fcc2334906de7e919298e",
+  "reused_archive_files_this_invocation": 0,
+  "initial_verified_archive_reuse_files": 1912,
+  "raw_directory_bytes_including_hub_cache": 6866085552,
+  "free_C_bytes_at_final_check": 174273536000,
+  "network_bytes": "NOT MEASURED; retries cause traffic beyond unique file bytes"
+}

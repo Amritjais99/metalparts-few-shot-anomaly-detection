@@ -1,0 +1,6 @@
+/docs/protocol.md -text
+/docs/freeze.json -text
+/common/configs/config.yaml -text
+/common/*.py -text
+/models/*/model.py -text
+/data/manifests/** -text

@@ -1,0 +1,6 @@
+condition,raw_target_normal,raw_target_anomalous,anomaly_masks,mask_ok,source_fit_plus_val_components,eligible_target_normal_components,support_capacity_after_test_reserve,reviewed_independent_support,near_duplicate_pairs,candidate_clusters,target_images_affected,status,reason
+test1,120,90,90,True,2,2,0,NOT ESTABLISHED,12723,2,206,NO-GO,Conservative source/support component capacity fails; physical identity unverified
+test2,120,60,60,True,2,1,0,NOT ESTABLISHED,12990,2,178,NO-GO,Conservative source/support component capacity fails; physical identity unverified
+test3,80,60,60,True,2,0,0,NOT ESTABLISHED,10436,2,135,NO-GO,Conservative source/support component capacity fails; physical identity unverified
+test4,80,60,60,True,2,2,0,NOT ESTABLISHED,10857,3,140,NO-GO,Conservative source/support component capacity fails; physical identity unverified
+test5,80,60,60,True,2,54,34,NOT ESTABLISHED,9340,17,70,NO-GO,Conservative source/support component capacity fails; physical identity unverified

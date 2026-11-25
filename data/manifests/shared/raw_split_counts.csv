@@ -1,0 +1,16 @@
+group,split,normal,anomalous,masks,missing_anomaly_masks,bad_geometry,nonbinary_masks,resolutions
+MetalParts,test0,120,51,51,0,0,0,2681x1500
+MetalParts,test1,120,80,80,0,0,0,2681x1500
+MetalParts,test2,120,80,80,0,0,0,2681x1500
+MetalParts,test3,120,80,80,0,0,0,2681x1500
+MetalParts,test4,120,80,80,0,0,0,2681x1500
+MetalParts,test5,60,40,40,0,0,0,2681x1500
+MetalParts,test6,60,40,40,0,0,0,2681x1500
+MetalParts,train,180,51,51,0,0,0,2681x1500
+PCB,test0,120,75,75,0,0,0,"2048x2048,2560x2560"
+PCB,test1,120,90,90,0,0,0,2048x2048
+PCB,test2,120,60,60,0,0,0,2048x2048
+PCB,test3,80,60,60,0,0,0,2048x2048
+PCB,test4,80,60,60,0,0,0,2048x2048
+PCB,test5,80,60,60,0,0,0,2048x2048
+PCB,train,180,75,75,0,0,0,"2048x2048,2560x2560"

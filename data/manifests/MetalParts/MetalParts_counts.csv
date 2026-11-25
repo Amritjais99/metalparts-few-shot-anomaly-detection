@@ -1,0 +1,7 @@
+condition,source_fit,source_val,support,target_normal,target_anomalous,support_components,cross_role_components,forbidden_role_components,k20_and_10plus10,failed_seeds,excluded_target_normals,excluded_target_anomalies
+test1,41,11,38,20,50,38,1,0,PASS,,62,30
+test2,53,14,31,28,41,31,1,0,PASS,,61,39
+test3,52,14,40,41,46,40,1,0,PASS,,39,34
+test4,53,14,40,76,77,40,1,0,PASS,,4,3
+test5,52,14,36,21,36,36,0,0,PASS,,3,4
+test6,53,14,39,21,40,39,0,0,PASS,,0,0

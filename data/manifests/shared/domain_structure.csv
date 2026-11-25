@@ -1,0 +1,16 @@
+group,split,shift_inferred_from_filename,normal_filename_example,object_id
+MetalParts,test0,source,normal/Live_Normal_None_None_75.jpg,NOT DOCUMENTED
+MetalParts,test1,lighting,normal/Live_Normal_Lighting_Ambient_Light_Var_250.jpg,NOT DOCUMENTED
+MetalParts,test2,position,normal/Live_Normal_Position_+5%_to_-5%_28.jpg,NOT DOCUMENTED
+MetalParts,test3,rotation,normal/Live_Normal_Rotation_+5_deg_and_-5_deg_38.jpg,NOT DOCUMENTED
+MetalParts,test4,scale,normal/Live_Normal_Scale_+5%_to_-5%_7.jpg,NOT DOCUMENTED
+MetalParts,test5,background 1,normal/Live_Normal_Background_Background_1_57.jpg,NOT DOCUMENTED
+MetalParts,test6,background 2,normal/Live_Normal_Background_Background_2_65.jpg,NOT DOCUMENTED
+MetalParts,train,source,normal/Live_Normal_None_None_156.jpg,NOT DOCUMENTED
+PCB,test0,source Set2,normal/Test_PCB_resized_None_None_Normal_Set2_222.jpg,NOT DOCUMENTED
+PCB,test1,lighting,normal/Test_PCB_Lighting_Morning_Normal_35.jpg,NOT DOCUMENTED
+PCB,test2,white balancing,normal/Test_PCB_White Balancing_Evening + AWB_Normal_25.jpg,NOT DOCUMENTED
+PCB,test3,rotation,normal/Test_PCB_Rotation_-5%_Normal_10.jpg,NOT DOCUMENTED
+PCB,test4,position,normal/Test_PCB_Position_-10%_Normal_26.jpg,NOT DOCUMENTED
+PCB,test5,shadow,normal/Test_PCB_Shadow_Object Alternate Location_Normal_2.jpg,NOT DOCUMENTED
+PCB,train,source Set1,normal/Train_PCB_resized_None_None_Normal_Set1_36.jpg,NOT DOCUMENTED

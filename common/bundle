@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+"""Build code.zip using only approved text inputs. Run: py -3 common/bundle."""
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+import zipfile
+
+ROOT = Path(__file__).resolve().parents[1]
+CODE_FILES = ('common/data.py', 'common/model.py', 'common/run.py', 'common/analyze.py', 'models/conv_ae/model.py', 'models/patchcore/model.py', 'models/dinov2/model.py')
+
+def build(root=ROOT):
+    root = Path(root).resolve()
+    inputs = [root/name for name in CODE_FILES]
+    inputs += [root/name for name in ('docs/protocol.md','docs/freeze.json','common/configs/config.yaml')]
+    inputs += sorted(p for p in (root/'data/manifests').glob('*/*') if p.is_file() and p.suffix in {'.csv','.json'})
+    inventory_name = "common/configs/bundle-inventory.json"
+    payloads = {}
+    for path in sorted(inputs):
+        if path.is_symlink() or not path.resolve().is_relative_to(root):
+            raise SystemExit(f"Unsafe input: {path}")
+        relative = path.relative_to(root).as_posix()
+        if relative == inventory_name:
+            raise SystemExit("Reserved generated filename: " + inventory_name)
+        content = path.read_bytes()
+        content.decode("utf-8-sig")  # Reject binary content disguised as text.
+        payloads[relative] = content
+    git = subprocess.run(["git", "--git-dir=" + str(root / ".git"),
+                          "--work-tree=" + str(root), "rev-parse", "HEAD"],
+                         capture_output=True, text=True, check=False)
+    inventory = {
+        "dataset_listing": json.loads((root/"common/configs/p1-dataset-listing.json").read_text(encoding="utf-8")),
+        "git_commit": git.stdout.strip() if git.returncode == 0 else "NOT FOUND",
+        "note": "Hashes identify exact bundled files. P2 must commit these inputs before GPU use.",
+        "files": [{"path": name, "bytes": len(content),
+                   "sha256": hashlib.sha256(content).hexdigest()}
+                  for name, content in sorted(payloads.items())],
+    }
+    payloads[inventory_name] = (json.dumps(inventory, indent=2) + "\n").encode()
+    destination = root / "code.zip"
+    temporary = root / "code.zip.tmp"
+    try:
+        with zipfile.ZipFile(temporary, "w", zipfile.ZIP_DEFLATED) as archive:
+            for name, content in sorted(payloads.items()):
+                archive.writestr(name, content)
+        with zipfile.ZipFile(temporary) as archive:
+            if archive.testzip() is not None or set(archive.namelist()) != set(payloads):
+                raise RuntimeError("Bundle integrity check failed")
+        temporary.replace(destination)
+    finally:
+        temporary.unlink(missing_ok=True)
+    print(f"Created {destination}: {len(payloads)} text files; {destination.stat().st_size} bytes")
+
+
+if __name__ == "__main__":
+    build()

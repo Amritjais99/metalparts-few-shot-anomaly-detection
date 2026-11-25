@@ -1,0 +1,2 @@
+contrast,k,estimate,ci95_low,ci95_high,predeclared_permutation_p,assumption
+Conv AE minus DINOv2,20,-0.24004612288475471,-0.2926224069800855,-0.18691828483468872,9.999000099990002e-05,"conditional on image-level independence, potentially optimistic"

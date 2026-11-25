@@ -1,0 +1,4 @@
+image_path,review,identity_conclusion
+MetalParts/metal_parts_data_dir_train/normal/Live_Normal_None_None_156.jpg,Visual spot check only; metadata-normal metal part,NOT ESTABLISHED; no exclusion/selection based on this visual review
+PCB/pcb_data_dir_train/normal/Train_PCB_resized_None_None_Normal_Set1_99.jpg,Visual spot check: shared PCB layout; appearance/position varies; no capture-ID documentation,NOT ESTABLISHED; no exclusion/selection based on this visual review
+PCB/pcb_data_dir_test0/normal/Test_PCB_resized_None_None_Normal_Set2_181.jpg,Visual spot check: shared PCB layout; appearance/position varies; no capture-ID documentation,NOT ESTABLISHED; no exclusion/selection based on this visual review
